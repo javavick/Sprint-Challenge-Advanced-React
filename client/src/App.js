@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      players: []
     };
   }
 
@@ -15,7 +15,7 @@ class App extends React.Component {
       .get("http://localhost:5000/api/players")
       .then((res) => {
         console.log(res.data);
-        this.setState({ data: res.data });
+        this.setState({ players: res.data });
       })
       .catch((err) => console.log(err));
   }
