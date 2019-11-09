@@ -3,7 +3,7 @@ import PlayerCard from "./PlayerCard.js";
 
 const PlayerMap = ({ players }) => {
   return (
-    <div>
+    <div data-testid="player-map">
       {players.map((item) => {
         return (
           <PlayerCard

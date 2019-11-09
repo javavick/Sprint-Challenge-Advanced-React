@@ -10,6 +10,7 @@ const DarkModeButton = () => {
         event.preventDefault();
         setDarkMode(!darkMode);
       }}
+      data-testid="dark-mode-button"
     >
       {darkMode ? "Light Mode" : "Dark Mode"}
     </button>
