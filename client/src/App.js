@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./App.css";
+import PlayerMap from "./components/PlayerMap.js";
 
 class App extends React.Component {
   constructor() {
@@ -21,7 +22,11 @@ class App extends React.Component {
   }
 
   render() {
-    return <div className="App"></div>;
+    return (
+      <div className="App">
+        <PlayerMap players={this.state.players} />
+      </div>
+    );
   }
 }
 
